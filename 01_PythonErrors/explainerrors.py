@@ -97,3 +97,82 @@ class ExplainErrors:
 
         mylist = ['1', '2', '3']
         eval("mylist.split()")
+
+    @classmethod
+    def throw_name(cls):
+        """
+        NameError Example:
+        x = y
+
+        Throws a NameError because 'y' has not been defined in the current runtime.
+
+        :return: None
+        """
+
+        print(cls.throw_name.__doc__)
+
+        x = y
+
+    @classmethod
+    def throw_OS(cls):
+        """
+        OSError Example:
+        with open("file.txt", "r") as f:
+            pass
+
+        Throws a OSError since "file.txt" does not exist, therefore python cannot read it.
+
+        :return: None
+        """
+
+        print(cls.throw_OS.__doc__)
+
+        with open("file.txt", "r") as f:
+            pass
+
+    @classmethod
+    def throw_recursion(cls):
+        """
+        RecursionError Example:
+        def endless(value):
+            return endless(value + 1)
+
+        Throws a RecursionError since there is no end condition for the code to stop calling itself.
+        A fix would be:
+
+        def endless(value):
+            if value > 10:
+                return "you reached the end"
+            else:
+                return endless(value + 1)
+
+        :return: None
+        """
+
+        print(cls.throw_recursion.__doc__)
+
+        def endless(value):
+            return endless(value + 1)
+
+        endless(1)
+
+    @classmethod
+    def throw_stopiter(cls):
+        """
+        StopIteration Example:
+        my_iter = zip([1, 10], [2, 20], [3, 30])
+        next(my_iter)
+        > (1, 2, 3)
+        next(my_iter)
+        > (10, 20, 30)
+        next(my_iter)
+        > yields the error since we hit the end of the iterations
+
+        :return: None
+        """
+
+        print(cls.throw_stopiter.__doc__)
+        my_iter = zip([1, 10], [2, 20], [3, 30])
+        next(my_iter)
+        next(my_iter)
+        next(my_iter)

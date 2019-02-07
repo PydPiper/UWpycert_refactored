@@ -24,3 +24,20 @@ class test_errors(TestCase):
     def test_attribute(self):
         with self.assertRaises(AttributeError):
             exp.throw_attribute()
+
+    def test_name(self):
+        with self.assertRaises(NameError):
+            exp.throw_name()
+
+    def test_OS(self):
+        with self.assertRaises(OSError):
+            exp.throw_OS()
+
+    def test_recursion(self):
+        with self.assertRaises(RecursionError):
+            exp.throw_recursion()
+
+    def test_iter(self):
+        with self.assertRaises(StopIteration):
+            exp.throw_stopiter()
+
