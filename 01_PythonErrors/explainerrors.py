@@ -176,3 +176,34 @@ class ExplainErrors:
         next(my_iter)
         next(my_iter)
         next(my_iter)
+
+    @classmethod
+    def throw_value(cls):
+        """
+        ValueError Example:
+        int('a')
+
+        Throws a ValueError because the function int() takes a input of type: str, int, or float and converts it to
+        a integer; so this may seem like a TypeError at first since we know that character strings cannot be converted
+        into integers, but looking at the valid inputs, str inputs are in fact supported for value string (ex. int('5'))
+        therefore this is not a TypeError, but instead a ValueError since the input is the correct type but still yields
+        an error.
+
+        :return: None
+        """
+
+        int('a')
+
+    @classmethod
+    def throw_zerodivision(cls):
+        """
+        ZeroDivisionError Example:
+        1/0
+
+        Throws a ZeroDivisionError for mathematical divide by zero errors
+
+        :return: None
+        """
+
+        return 1/0
+

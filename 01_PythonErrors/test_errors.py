@@ -41,3 +41,10 @@ class test_errors(TestCase):
         with self.assertRaises(StopIteration):
             exp.throw_stopiter()
 
+    def test_value(self):
+        with self.assertRaises(ValueError):
+            exp.throw_value()
+
+    def test_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            exp.throw_zerodivision()
