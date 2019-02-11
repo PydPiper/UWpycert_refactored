@@ -14,7 +14,7 @@ def fizzbuzz(start_no: int = 0, stop_no: int = 100) -> None:
 
     :param start_no: (type:int, default=0) Start number for loop up from +1 at a time
     :param stop_no: (type:int, default=100) Stop number (last number is included in the check for FizzBuzz
-    :return: (type:str) Use print(fizzbuzz()) to output to console 
+    :return: (type:str) Use print(fizzbuzz()) to output to console
     """
     current_value = start_no
     buffer = ""
