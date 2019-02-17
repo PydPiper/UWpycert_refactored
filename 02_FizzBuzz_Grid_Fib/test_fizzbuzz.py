@@ -3,7 +3,7 @@
 from fizzbuzz import fizzbuzz as fz
 from unittest import TestCase
 
-class test_errors(TestCase):
+class test_fiz(TestCase):
 
     def test_input_type(self):
         with self.assertRaises(TypeError):

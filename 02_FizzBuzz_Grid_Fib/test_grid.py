@@ -4,7 +4,7 @@ from grid import draw_grid as dg
 from unittest import TestCase
 
 
-class test_errors(TestCase):
+class test_grid(TestCase):
 
     def test_input_type(self):
         with self.assertRaises(TypeError):

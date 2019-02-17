@@ -8,7 +8,7 @@ Objective: From the count of 0 to 100 print Fizz on numbers divisible of 3, Buzz
 """
 
 
-def fizzbuzz(start_no: int = 0, stop_no: int = 100) -> None:
+def fizzbuzz(start_no: int = 0, stop_no: int = 100) -> str:
     """
     Classic FizzBuzz challenge. Marks numbers divisible by 3 with Fizz, 5 with Buzz, both with FizzBuzz.
 
