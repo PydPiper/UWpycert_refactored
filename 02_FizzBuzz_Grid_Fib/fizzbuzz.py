@@ -12,9 +12,10 @@ def fizzbuzz(start_no: int = 0, stop_no: int = 100) -> str:
     """
     Classic FizzBuzz challenge. Marks numbers divisible by 3 with Fizz, 5 with Buzz, both with FizzBuzz.
 
-    :param start_no: (type:int, default=0) Start number for loop up from +1 at a time
-    :param stop_no: (type:int, default=100) Stop number (last number is included in the check for FizzBuzz
-    :return: (type:str) Use print(fizzbuzz()) to output to console
+    :param int start_no: (default=0) Start number for loop up from +1 at a time
+    :param int stop_no: (default=100) Stop number (last number is included in the check for FizzBuzz
+    :return: Use print(fizzbuzz()) to output to console
+    :rtype: str
     """
     current_value = start_no
     buffer = ""

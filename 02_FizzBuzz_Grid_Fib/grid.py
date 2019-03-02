@@ -18,10 +18,10 @@ def draw_grid(row: int = 2, col: int = 2, size: int = 2) -> str:
     """
     Prints a grid of variable row/col/size, corner = "+", horizontal = "-", vertical = "|" ends.
 
-    :param row: (type: int, default = 2)
-    :param col: (type: int, default = 2)
-    :param size: (type: int, default = 2)
-    :return: (type: str) a printable string representation of the output grid
+    :param int row: (default = 2)
+    :param int col: (default = 2)
+    :param int size: (default = 2)
+    :return: (str) a printable string representation of the output grid
     """
 
     mem_horiz = "-"
